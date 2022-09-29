@@ -1,0 +1,161 @@
+/* ################################################## */
+/* ########### Global classes / overrides ########### */
+/* ################################################## */
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+.page_header {
+  background-color: #000;
+  border-bottom: 5px solid #f2ff00;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page_header h1 {
+  font-size: 32px;
+  font-family: 'Merriweather',serif;
+}
+
+.page_header h1,
+.page_header h1 a,
+.page_header h1 a:visited {
+  color: #f2ff00;
+  text-decoration:none;
+}
+
+.main_navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding: 15px 0;
+  font-family: 'Lato', sans-serif;
+  margin:0;
+}
+
+.main_navigation li {
+
+  padding-left: 15px;
+}
+
+.main_navigation li,
+.main_navigation li a,
+.main_navigation li a:visited {
+  color:white;
+  text-decoration:none;
+}
+
+.main_navigation li a:hover{
+  color:#f2ff00;
+}
+
+.main_navigation_featured{
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.tag_line {
+  background-color: #adadad;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.tag_line p{
+  font-size: 28px;
+  margin: 0;
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom: 3px solid #f2ff00;
+}
+.button {
+  border-radius: 5px;
+  color: #000;
+  display: block;
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  }
+
+.hero{
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg')center no-repeat;
+
+  background-size: cover;
+  display: flex;
+  min-height: 60%;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+ }
+.hero h2{
+  font-weight: bold;
+}       
+
+.hero-box {
+  background-color: rgba(255,255,255,0.9);
+  margin: 25px 25px 25px 0;
+  padding: 25px;
+  width: 380px;
+  height: 230px;
+  padding:4%;
+  box-shadow: 0 0 5px rgb(55, 54, 54);}
+
+.P-button {
+  background-color: #f2ff00;
+  border-bottom: 2px solid #ffd900;
+  }
+.featured_block h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 24px; }
+
+.featured_block .button{
+  background-color: #adadad;
+  border-bottom: 2px solid #878787;
+}   
+
+.main-content-dividers{
+  display:flex;
+  justify-content: center;
+
+}
+
+.sub-content-divider{
+  border-right: 1px solid lightgray;
+  margin: 10px 0; 
+  padding: 2%;
+}
+
+.sub-content-divider:last-child {
+  border-right:none;
+}
+
+.page-footer{
+  background-color: #000;
+  color: #fff;
+  padding-top: 15px ;
+  padding-bottom: 15px;
+  
+  padding-left: 25px;
+}
