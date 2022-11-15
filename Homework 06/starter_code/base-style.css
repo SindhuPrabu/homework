@@ -161,6 +161,98 @@ a {
 }
 
 
+/*The Header
+* The header should show a hamburger at 1024px and below
+* The navs should stack and display similar to the mock.
+* Clicking on the hamburger should allow the menu to open and close
+* There is a class on the UL's in the navigation called "trulia-nav-mobilehide".  Use it to show/hide the navigation*/
+
+/* Responsive Styles at 1024px and below*/
+@media screen and (max-width:1024px){
+
+  /* styling the navigation */
+.trulia-nav {
+  height: auto;
+  display: block;
+}
+
+.trulia-nav-toggle {
+  display:block;
+  color:white;
+  font-weight:bold;
+  font-size: 2rem;
+  margin-right:2rem;
+}
+
+.trulia-nav ul li {
+  display:inline-block;
+  margin:0;
+}
+
+
+
+.trulia-nav-logo {
+  height: 25px;
+  width: 78px;
+  padding-left:0;
+}
+
+.trulia-nav-left,
+.trulia-nav-right {
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.trulia-nav-left ul,
+.trulia-nav-right ul {
+  width:100%;
+  display: block;
+  margin:0;
+}
+
+.trulia-nav-left ul li,
+.trulia-nav-right ul li {
+  display: block;
+  }
+
+.trulia-nav-item,
+.trulia-nav-item:visited {
+  display:block;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom:1rem;
+  margin-left: 1rem;
+}
+
+.trulia-nav-mobilehide {
+  height:0;
+  overflow:hidden;
+  width:0;
+}
+
+}
+/* At sizes above 1600px, make it 6 across */
+@media screen and (min-width:1600px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+/* At sizes above 1200px, make it 4 across */
+@media screen and (min-width:1200px) and (max-width:1599px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/* At less than 768px, make it 2 across */
+@media screen and (max-width:768px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
 
 /**
  * CSS CIRCLE - rough how to
